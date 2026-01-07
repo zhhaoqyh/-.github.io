@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我 - 个人主页</title>
+    <!-- 通用样式（和其他三个页面保持一致） -->
+    <style>
+        /* 全局重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", Arial, sans-serif;
+        }
+
+        /* 导航栏样式 - 核心统一部分 */
+        nav {
+            background-color: #2c3e50;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo a {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            background-color: #34495e;
+        }
+
+        .nav-links li a.active {
+            background-color: #1abc9c;
+            color: #fff;
+        }
+
+        /* 页面主体样式 */
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .about-section {
+            background-color: #f8f9fa;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .about-title {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 1rem;
+        }
+
+        .about-content {
+            display: flex;
+            gap: 3rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .about-img {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-img img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .about-text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .about-text p {
+            line-height: 1.8;
+            color: #34495e;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .about-skills {
+            margin-top: 2rem;
+        }
+
+        .about-skills h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skills-list span {
+            background-color: #1abc9c;
+            color: #fff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-size: 1rem;
+        }
+
+        /* 页脚样式（和其他页面统一） */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 - 和其他页面完全一致 -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">我的个人主页</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html" class="active">关于我</a></li>
+                <li><a href="portfolio.html">作品集</a></li>
+                <li><a href="contact.html">联系我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主体内容 -->
+    <div class="container">
+        <section class="about-section">
+            <h2 class="about-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="郑豪.jpg" alt="个人头像">
+                </div>
+                <div class="about-text">
+                    <p>大家好！我是一名热爱编程和设计的前端开发工程师，拥有5年的Web开发经验，专注于打造高效、美观且用户体验优秀的网站和应用。</p>
+                    <p>我毕业于XX大学计算机科学与技术专业，从大学时期就开始接触前端开发，对HTML、CSS、JavaScript有着深入的理解，同时熟练掌握React、Vue等主流前端框架。我始终保持学习的热情，紧跟技术前沿，不断提升自己的技术能力。</p>
+                    <p>除了编程之外，我还喜欢摄影、旅行和阅读。我相信多元化的兴趣能够带来更开阔的思维，也能让我在开发中融入更多创意和人文关怀。</p>
+                    <p>我的职业理念是：用技术解决问题，用设计提升体验，用心做好每一个产品。</p>
+
+                    <div class="about-skills">
+                        <h3>我的技能</h3>
+                        <div class="skills-list">
+                            <span>HTML5/CSS3</span>
+                            <span>JavaScript/ES6+</span>
+                            <span>React</span>
+                            <span>Vue</span>
+                            <span>TypeScript</span>
+                            <span>UI/UX设计</span>
+                            <span>响应式开发</span>
+                            <span>Webpack</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 页脚 - 和其他页面统一 -->
+    <footer>
+        <p>© 2025 我的个人主页 | 所有权利保留</p>
+    </footer>
+</body>
+</html>
